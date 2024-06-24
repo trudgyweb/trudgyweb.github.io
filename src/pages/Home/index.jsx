@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   return (
     <div className="container-fluid">
+      <Helmet>
+        <title>Home | Trudgy Web Solutions - Web Development Company</title>
+      </Helmet>
       <div className="row justify-content-center pt-5">
         <div className="col-md-6">
-        <h1 className="text-white">
-          Coming Soon
-        </h1>
+  
         </div>
       </div>
     </div>

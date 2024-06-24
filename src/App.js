@@ -9,13 +9,11 @@ import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
-    <div className="bg-dark" style={{height: "100vh"}}>
+    <div>
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/" exact element={<ComingSoon />} />
-        <Route path="/" exact element={<ComingSoon />} />
-        <Route path="/" exact element={<ComingSoon />} />
+        <Route path="/" exact element={<Home />} />
         {/* <Route path="/portfolio" exact element={<Home />} />
         <Route path="/portfolio/about" exact element={<About />} />
         <Route path="/portfolio/contact" exact element={<Contact />} /> */}
