@@ -13,15 +13,15 @@ function App() {
     <BrowserRouter>
     <Header />
       <Routes>
-        <Route path="/portfolio/" exact element={<ComingSoon />} />
-        <Route path="/portfolio/about" exact element={<ComingSoon />} />
-        <Route path="/portfolio/contact" exact element={<ComingSoon />} />
+        <Route path="/" exact element={<ComingSoon />} />
+        <Route path="/" exact element={<ComingSoon />} />
+        <Route path="/" exact element={<ComingSoon />} />
         {/* <Route path="/portfolio" exact element={<Home />} />
         <Route path="/portfolio/about" exact element={<About />} />
         <Route path="/portfolio/contact" exact element={<Contact />} /> */}
         {/* <Route path="/" element={} />
         <Route path="/" element={} /> */}
-      <Route path="*" element={<Navigate to="/portfolio/" />} />
+      <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
     </div>
