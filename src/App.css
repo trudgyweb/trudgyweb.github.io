@@ -16,6 +16,9 @@ body{
 .fs20{
   font-size: 20px;
 }
+.custom_heading1{
+  font-size: 60px;
+}
 .prompt-thin {
   font-family: "Prompt", sans-serif;
   font-weight: 100;

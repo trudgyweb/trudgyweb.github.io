@@ -84,7 +84,7 @@ function Header() {
               <Link
                 className={`nav-link btn btn-danger  text-white rounded-0 ${
                   location.pathname === "/" ? "active" : ""
-                }`}
+                }`}  style={{backgroundColor:"#FF2301", borderColor:"#FF2301"}}
                 to="/"
               >
                 <i className="bi bi-telephone"></i> Call Now
