@@ -11,7 +11,7 @@ function Header() {
       <div className="container align-items-center">
         <div className="col-8 col-md-5 col-lg-5 col-xl-5 pt-3 pb-3">
           <Link className="navbar-brand text-white" to="/">
-            <i className="bi bi-robot fs18"></i> Trudgy
+            <img src="/assets/images/trudgy_white_updated.png" width="120px" />
           </Link>
         </div>
         <button
