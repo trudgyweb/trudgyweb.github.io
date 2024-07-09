@@ -1,12 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Styles from "./style.module.css";
 import { Link, useLocation } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Header() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const location = useLocation();
   return (
     <nav
-      className={`navbar navbar-expand-lg ${Styles.custom_bg} text-white p-0`}
+      className={`navbar navbar-expand-lg  border-bottom border-3 border-black ${Styles.custom_bg} text-white p-0`}
     >
       <div className="container align-items-center">
         <div className="col-8 col-md-5 col-lg-5 col-xl-5 pt-3 pb-3">

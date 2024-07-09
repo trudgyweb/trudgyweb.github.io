@@ -6,16 +6,18 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ComingSoon from './pages/ComingSoon';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         <Route path="/" exact element={<Home />} />
       <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
     </div>
   );

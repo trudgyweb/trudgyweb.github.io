@@ -3,7 +3,9 @@
 .ft-poppins{
   font-family: "Poppins", sans-serif;
 }
-
+.custom_bg{
+  background: #141412!important;
+}
 body{
   font-family: "Prompt", sans-serif !important;
 }
@@ -138,7 +140,41 @@ body{
   border-bottom: rgb(149, 19, 19) 1.5px solid;
   transition: all 0.3s ease-in-out;
 }
+@keyframes animateBorder {
+  0% { border-color: #f00; }
+  50% { border-color: #0f0; }
+  100% { border-color: #00f; }
+}
+.card_animate {
+  border: 3px solid;
+  border-radius: 20px;
+  border-image: linear-gradient(to right, #f00, #0f0, #00f) 1;
+  animation: animateBorder 2s linear infinite;
+}
 
+.img_hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img_hover:hover {
+  transform: scale(1.1);
+}
+
+.custom_card_border_1{
+  border-radius: 40px 40px 0 40px  !important;
+}
+
+.custom_card_border_2{
+  border-radius: 40px 40px 40px 0  !important;
+}
+
+.custom_card_border_3{
+  border-radius: 40px 0 40px 40px  !important;
+}
+
+.custom_card_border_4{
+  border-radius: 0 40px  40px 40px  !important;
+}
 
 @media screen and (max-width: 600px) {
   .custom_heading1 {
